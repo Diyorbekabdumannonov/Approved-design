@@ -2,7 +2,7 @@ import { Box, InputLabel, MenuItem, Select } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Button from './Button'
+import { Button } from './shared'
 
 export default function Navbar() {
   return (
@@ -16,7 +16,7 @@ export default function Navbar() {
         />
       </Box>
       <Box className="flex items-center gap-6 font-xl">
-        <Link href="#">About</Link>
+        <Link href="#about">About</Link>
         <InputLabel id="demo-select-small"></InputLabel>
         <Select
           labelId="demo-select-small"
@@ -25,8 +25,8 @@ export default function Navbar() {
           sx={{ boxShadow: 'none', '.MuiOutlinedInput-notchedOutline': { border: 0 } }}>
           <MenuItem value="Services" selected>Services</MenuItem>
         </Select>
-        <Link href="#">Projects</Link>
-        <Link href="#">Clients</Link>
+        <Link href="#project">Projects</Link>
+        <Link href="#client">Clients</Link>
         <Button>
           Login
         </Button>

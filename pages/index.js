@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Services from '../components/Services'
 import clientPromise from './../lib/mongodb'
+import About from './../components/About'
+import Benefits from './../components/Benefits'
+import Contact from './../components/Contact'
+import Footer from './../components/Footer'
 
 export default function Home({ services }) {
   return (
@@ -18,6 +22,10 @@ export default function Home({ services }) {
       <main>
         <Header />
         <Services services={services} />
+        <About />
+        <Benefits />
+        <Contact />
+        <Footer />
       </main>
     </>
   )
