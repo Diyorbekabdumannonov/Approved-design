@@ -28,14 +28,14 @@ export default function Benefits() {
           <span className="text-primary">Benefits </span> of GeoMaus software
         </Title>
         {headings.map(heading => {
-          return <>
+          return <Box key={heading.title}>
             <Subtitle className="text-primary font-bold">
               {heading.title}
             </Subtitle>
             <Subtitle className='-mt-0.5'>
               {heading.subtitle}
             </Subtitle>
-          </>
+          </Box>
         })}
       </Box>
     </Box>

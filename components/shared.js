@@ -1,6 +1,7 @@
 import { Typography, Box } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "@mui/material"
 
 export function Title({ children, className }) {
     return <Typography
@@ -40,13 +41,13 @@ export function SubtitleMd({ children, className }) {
     </Typography>
 }
 
-export function Button({ children, small }) {
+export function Btn({ children, small }) {
     return (
-        <Box
-            className={"bg-primary rounded-2xl text-white text-[18px] py-4 cursor-pointer " +
+        <Button
+            className={"bg-primary hover:bg-primary rounded-2xl text-white text-[18px] py-4 cursor-pointer " +
                 (small ? 'px-10' : 'px-16')}>
             {children}
-        </Box>
+        </Button>
     )
 }
 

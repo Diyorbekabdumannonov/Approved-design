@@ -2,7 +2,7 @@ import { Box, InputLabel, MenuItem, Select } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Button } from './shared'
+import { Btn } from './shared'
 
 export default function Navbar() {
   return (
@@ -27,9 +27,9 @@ export default function Navbar() {
         </Select>
         <Link href="#project">Projects</Link>
         <Link href="#client">Clients</Link>
-        <Button>
+        <Btn>
           Login
-        </Button>
+        </Btn>
       </Box>
     </Box>
   )

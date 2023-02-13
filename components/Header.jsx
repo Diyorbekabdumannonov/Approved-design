@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
-import { Subtitle, TitleLg, Button } from './shared'
+import { Subtitle, TitleLg, Btn } from './shared'
 import Navbar from './Navbar'
 
 export default function Header() {
@@ -32,7 +32,7 @@ export default function Header() {
                             With our bespoke software platform, you can access all of your building data from anywhere in the world, with an unlimited number of stakeholders and users for effective communication and collaboration. Our platform provides an all-in-one solution for managing all aspects of buildings, from floor plans and photographs to measurements, legal information, and more.
                         </Subtitle>
                         <Box className="mt-7 flex items-center justify-start">
-                            <Button small>Get in touch</Button>
+                            <Btn small>Get in touch</Btn>
                         </Box>
                     </Box>
                     <Image

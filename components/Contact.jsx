@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import { Button, SocialMedia, Subtitle, Title } from './shared'
+import { Btn, SocialMedia, Subtitle, Title } from './shared'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -11,6 +11,15 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 export default function Contact() {
+  const initialValues = {
+    name: '',
+    email: '',
+    note: '',
+  }
+  const onSubmit = (values) => {
+    console.log(values, initialvalues)
+  }
+
   return (
     <Box className="cont flex items-start bg-secondary pb-16 mt-60" id="client">
       <Box className="flex-1 py-16 mr-28">
@@ -49,14 +58,8 @@ export default function Contact() {
       </Box>
       <Box className="flex-1">
         <Formik
-          initialValues={{
-            name: '',
-            email: '',
-            note: '',
-          }}
-          onSubmit={(values) => {
-            console.log(values)
-          }}>
+          initialValues
+          onSubmit>
           <Form>
             <Box className="bg-white shadow-filter -mt-20 rounded-3xl p-8">
               <Box className="flex flex-col">
@@ -72,7 +75,7 @@ export default function Contact() {
                 <textarea className="bg-secondary p-4 h-48 rounded-2xl outline-none mt-2" id="note" />
               </Box>
               <Box className="text-center mt-8">
-                <Button>Contact us</Button>
+                <Btn>Contact us</Btn>
               </Box>
             </Box>
           </Form>

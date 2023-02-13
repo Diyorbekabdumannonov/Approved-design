@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@mui/material'
 import Image from 'next/image'
-import { Button, Subtitle, SubtitleMd, Title } from './shared'
+import { Btn, Subtitle, SubtitleMd, Title } from './shared'
 
 export default function About() {
   return (
@@ -17,7 +17,7 @@ export default function About() {
           With our bespoke software platform, you can access all of your building data from anywhere in the world, with an unlimited number of stakeholders and users for effective communication and collaboration. Our platform provides an all-in-one solution for managing all aspects of buildings, from floor plans and photographs to measurements, legal information, and more.
         </Subtitle>
         <Box className="mt-6 flex items-center justify-start">
-          <Button small>Learn more</Button>
+          <Btn small>Learn more</Btn>
         </Box>
       </Box>
       <Box className="flex-1 relative">

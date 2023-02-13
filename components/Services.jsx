@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
-import { Subtitle, SubtitleMd, Title, TitleLg, shared, Button } from './shared'
+import { Subtitle, SubtitleMd, Title, TitleLg, shared, Btn } from './shared'
 
 export default function Services({ services }) {
     return (
@@ -22,7 +22,7 @@ export default function Services({ services }) {
                             <Subtitle className='text-center'>{service.subtitle}</Subtitle>
                         </Box>
                         <Box className="text-center mt-4">
-                            <Button>Learn More</Button>
+                            <Btn>Learn More</Btn>
                         </Box>
                     </Box>
                 ))}
