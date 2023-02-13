@@ -8,6 +8,6 @@ html {
 
 @layer components {
     .cont {
-        @apply px-16 max-w-[1440px] mx-auto
+        @apply md:px-16 max-w-[1440px] mx-auto px-6
     }
 }

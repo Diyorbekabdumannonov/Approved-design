@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Btn } from './shared'
+import { Menu } from '@mui/icons-material'
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
           alt="logo"
         />
       </Box>
-      <Box className="flex items-center gap-6 font-xl">
+      <Box className="lg:flex items-center gap-6 font-xl hidden">
         <Link href="#about">About</Link>
         <InputLabel id="demo-select-small"></InputLabel>
         <Select
@@ -31,6 +32,7 @@ export default function Navbar() {
           Login
         </Btn>
       </Box>
+      <Menu className="lg:hidden" />
     </Box>
   )
 }

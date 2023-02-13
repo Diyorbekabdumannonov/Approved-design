@@ -21,9 +21,9 @@ export default function Contact() {
   }
 
   return (
-    <Box className="cont flex items-start bg-secondary pb-16 mt-60" id="client">
-      <Box className="flex-1 py-16 mr-28">
-        <Title className='text-5xl'>
+    <Box className="cont flex flex-col lg:flex-row items-start bg-secondary pb-16 lg:mt-60 mt-16" id="client">
+      <Box className="flex-1 py-16 lg:mr-28 max-w-lg lg:max-w-none mx-auto flex items-center flex-col lg:block text-center lg:text-left">
+        <Title className='lg:text-5xl'>
           <span className='text-primary'>Get expert assistance today</span> Contact us
         </Title>
         <Subtitle>
@@ -56,12 +56,12 @@ export default function Contact() {
           <span>New Bell Yard , New York</span>
         </Subtitle>
       </Box>
-      <Box className="flex-1">
+      <Box className="lg:flex-1 w-full">
         <Formik
           initialValues
           onSubmit>
           <Form>
-            <Box className="bg-white shadow-filter -mt-20 rounded-3xl p-8">
+            <Box className="bg-white shadow-filter lg:-mt-20 rounded-3xl p-8">
               <Box className="flex flex-col">
                 <label htmlFor="name">Enter Name</label>
                 <Field className="bg-secondary p-4 rounded-2xl outline-none mt-2" id="name" name="name" />

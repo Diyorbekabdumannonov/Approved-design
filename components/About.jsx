@@ -5,8 +5,8 @@ import { Btn, Subtitle, SubtitleMd, Title } from './shared'
 
 export default function About() {
   return (
-    <Box className="flex items-start mt-48 cont" id="about">
-      <Box className="flex-1">
+    <Box className="flex flex-col lg:flex-row lg:items-start items-center mt-48 cont" id="about">
+      <Box className="lg:flex-1 lg:text-left text-center">
         <SubtitleMd>ABOUT US</SubtitleMd>
         <Title>
           Bespoke <span className="text-primary">
@@ -16,15 +16,16 @@ export default function About() {
         <Subtitle className="max-w-lg">
           With our bespoke software platform, you can access all of your building data from anywhere in the world, with an unlimited number of stakeholders and users for effective communication and collaboration. Our platform provides an all-in-one solution for managing all aspects of buildings, from floor plans and photographs to measurements, legal information, and more.
         </Subtitle>
-        <Box className="mt-6 flex items-center justify-start">
+        <Box className="mt-6 flex items-center lg:justify-start justify-center">
           <Btn small>Learn more</Btn>
         </Box>
       </Box>
-      <Box className="flex-1 relative">
+      <Box className="flex-1 relative lg:px-0 px-6">
         <Image
           src='/about.png'
           width={600}
           height={500}
+          className="mt-6 lg:mt-0"
           alt="about"
         />
         <Box

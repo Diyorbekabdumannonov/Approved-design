@@ -12,8 +12,8 @@ export default function Footer() {
     ]
     return (
         <Box className="cont pt-16">
-            <Box className="flex items-start justify-between">
-                <Box className="flex-[2.5] mr-16">
+            <Box className="xl:flex items-start justify-between grid grid-cols-2 gap-7">
+                <Box className="flex-[2.5] w-44 lg:w-auto md:mr-16">
                     <Image
                         src="/logo.png"
                         width={140}
@@ -25,16 +25,16 @@ export default function Footer() {
                         Experience the full potential of a digital twin with GeoMaus! Our comprehensive building management platform creates a complete turnkey solution for managing your entire portfolio. Harness the power of a digital twin and simplify the process of keeping your buildings running smoothly and efficiently with GeoMaus
                     </Subtitle>
                 </Box>
-                <Box className="flex-1">
+                <Box className="flex-1 ml-10 lg:ml-0">
                     <Subtitle className='font-bold mb-8'>Company</Subtitle>
                     {links.slice(0, 5).map(link => {
-                        return <Subtitle>{link}</Subtitle>
+                        return <Subtitle key={link}>{link}</Subtitle>
                     })}
                 </Box>
                 <Box className="flex-1">
                     <Subtitle className='font-bold mb-8'>Services</Subtitle>
                     {links.slice(5, 10).map(link => {
-                        return <Subtitle>{link}</Subtitle>
+                        return <Subtitle key={link}>{link}</Subtitle>
                     })}
                 </Box>
                 <Box className="flex-1">

@@ -7,15 +7,14 @@ export function Title({ children, className }) {
     return <Typography
         variant="body1"
         fontWeight={600}
-        className={"text-4xl " + className}>
+        className={"lg:text-4xl text-2xl " + className}>
         {children}
     </Typography>
 }
 
 export function TitleLg({ children, className }) {
     return <Typography
-        variant="h3"
-        className={className}
+        className={'lg:text-[48px] text-2xl md:text-3xl lg:leading-[1] '+className}
         fontWeight={700}>
         {children}
     </Typography>
@@ -24,8 +23,7 @@ export function TitleLg({ children, className }) {
 export function Subtitle({ children, className }) {
     return <Typography
         variant="body1"
-        fontSize={18}
-        className={className}
+        className={'lg:text-[18px] md:text-sm text-xs '+className}
         marginTop={'14px'}>
         {children}
     </Typography>
@@ -44,8 +42,8 @@ export function SubtitleMd({ children, className }) {
 export function Btn({ children, small }) {
     return (
         <Button
-            className={"bg-primary hover:bg-primary rounded-2xl text-white text-[18px] py-4 cursor-pointer " +
-                (small ? 'px-10' : 'px-16')}>
+            className={"bg-primary hover:bg-primary px-6 rounded-2xl text-white lg:text-[18px] text-sm lg:py-4 py-2 cursor-pointer " +
+                (small ? 'lg:px-10' : 'lg:px-16')}>
             {children}
         </Button>
     )

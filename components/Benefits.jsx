@@ -12,8 +12,8 @@ export default function Benefits() {
   ]
 
   return (
-    <Box className="flex items-center py-4 cont mt-48">
-      <Box className="flex gap-6 flex-1">
+    <Box className="flex items-center flex-col-reverse lg:flex-row py-4 cont lg:mt-48 mt-10">
+      <Box className="flex gap-6 flex-1 lg:mt-0 mt-8">
         <Box className="gap-6 flex flex-col">
           <ImageMd src='/about1.png' />
           <ImageMd wide src='/about2.png' />
@@ -23,7 +23,7 @@ export default function Benefits() {
           <ImageMd src='/about4.png' />
         </Box>
       </Box>
-      <Box className="ml-20 flex-[1.3]">
+      <Box className="lg:ml-20 flex-[1.3] text-center lg:text-left max-w-lg lg:max-w-none">
         <Title>
           <span className="text-primary">Benefits </span> of GeoMaus software
         </Title>
