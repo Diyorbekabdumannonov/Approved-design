@@ -5,7 +5,7 @@ import { Button, Subtitle, SubtitleMd, Title } from './shared'
 
 export default function About() {
   return (
-    <Box className="flex items-start cont" id="about">
+    <Box className="flex items-start mt-48 cont" id="about">
       <Box className="flex-1">
         <SubtitleMd>ABOUT US</SubtitleMd>
         <Title>
@@ -13,7 +13,7 @@ export default function About() {
             Software Platform
           </span>
         </Title>
-        <Subtitle>
+        <Subtitle className="max-w-lg">
           With our bespoke software platform, you can access all of your building data from anywhere in the world, with an unlimited number of stakeholders and users for effective communication and collaboration. Our platform provides an all-in-one solution for managing all aspects of buildings, from floor plans and photographs to measurements, legal information, and more.
         </Subtitle>
         <Box className="mt-6 flex items-center justify-start">

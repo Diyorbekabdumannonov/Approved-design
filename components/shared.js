@@ -43,7 +43,7 @@ export function SubtitleMd({ children, className }) {
 export function Button({ children, small }) {
     return (
         <Box
-            className={"bg-primary rounded-xl text-white text-[18px] py-4 cursor-pointer " +
+            className={"bg-primary rounded-2xl text-white text-[18px] py-4 cursor-pointer " +
                 (small ? 'px-10' : 'px-16')}>
             {children}
         </Box>
@@ -60,7 +60,7 @@ export function ImageMd({ src, wide }) {
 }
 
 export function SocialMedia({ children }) {
-    return <Link href="#" className="bg-dark rounded-full text-white w-10 h-10 flex items-center justify-center">
+    return <Link href="#" className="bg-gray rounded-full text-white w-10 h-10 flex items-center justify-center">
         {children}
     </Link>
 }
