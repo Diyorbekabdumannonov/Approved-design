@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
-import { Subtitle, SubtitleMd, Title, TitleLg, shared } from './shared'
+import { Subtitle, SubtitleMd, Title, TitleLg, shared, Button } from './shared'
 
 export default function Services({ services }) {
     return (
