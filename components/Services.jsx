@@ -8,10 +8,10 @@ export default function Services({ services }) {
         <Box className="bg-white cont -mt-12 z-40 relative rounded-3xl py-8" id="project">
             <SubtitleMd className='text-center'>Everything you need all in one place</SubtitleMd>
             <Title className="text-center">Our <span className="text-primary">Services</span> </Title>
-            <Box className="grid grid-cols-3 gap-16 mt-14">
+            <Box className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-6 mt-14">
                 {services?.length && services.map(service => (
                     <Box className="shadow-card flex justify-between p-5 flex-col rounded-2xl pb-10" key={service.title}>
-                        <Box>
+                        <Box className="lg:block flex flex-col items-center">
                             <Image
                                 src={service.img}
                                 width={369}
